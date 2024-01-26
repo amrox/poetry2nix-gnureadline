@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry2nix_gnureadline"
+version = "0.1.0"
+description = ""
+authors = ["Andy Mroczkowski <a@mrox.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.34.25"
+debian-parser = "^0.1.2"
+
+[tool.poetry.group.dev.dependencies]
+gnureadline = "^8.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
